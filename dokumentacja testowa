@@ -1,0 +1,105 @@
+Dokumentacja testowa - Taskly
+Mateusz Witka (tester)
+
+
+1. Cel testów
+
+Chcieliśmy sprawdzić, czy aplikacja działa zgodnie z założeniami i czy
+najważniejsze funkcje robią to, co powinny. Przetestowaliśmy:
+- dodawanie zadań,
+- edycję,
+- usuwanie,
+- oznaczanie jako wykonane,
+- filtrowanie listy,
+- walidację formularza,
+- zapis danych w LocalStorage.
+
+
+2. Zakres testów
+
+Sprawdzaliśmy:
+- działanie formularza tworzenia i edycji,
+- obsługę listy zadań,
+- filtrowanie,
+- zapis i odczyt danych z LocalStorage,
+- interakcję użytkownika z interfejsem.
+
+Świadomie nie testowaliśmy:
+- wydajności przy bardzo dużej liczbie zadań,
+- bezpieczeństwa danych,
+- działania na urządzeniach mobilnych,
+- integracji z zewnętrznymi usługami.
+
+Te rzeczy były poza zakresem projektu.
+
+
+3. Środowisko testowe
+
+System: Windows 10
+Przeglądarka: Google Chrome
+Wersja aplikacji: końcowa
+Narzędzia pomocnicze: Vue DevTools, podgląd LocalStorage w przeglądarce
+
+
+4. Przypadki testowe
+
+T1 - Dodawanie zadania
+Kroki: otworzyć aplikację, wpisać nazwę zadania, wybrać kategorię, zapisać.
+Dane: tytuł "Nauka", kategoria To-Do.
+Oczekiwany rezultat: zadanie pojawia się na liście.
+Rzeczywisty rezultat: zadanie dodane poprawnie.
+Status: zaliczony.
+
+T2 - Edycja zadania
+Kroki: wybrać istniejące zadanie, kliknąć edycję, zmienić dane, zapisać.
+Dane: nowy tytuł "Projekt".
+Oczekiwany rezultat: zadanie zostaje zaktualizowane.
+Rzeczywisty rezultat: zmiany zapisane poprawnie.
+Status: zaliczony.
+
+T3 - Usuwanie zadania
+Kroki: wybrać zadanie, kliknąć przycisk usunięcia.
+Dane: istniejące zadanie.
+Oczekiwany rezultat: zadanie znika z listy.
+Rzeczywisty rezultat: zadanie usunięte.
+Status: zaliczony.
+
+T4 - Oznaczanie jako wykonane
+Kroki: zaznaczyć checkbox przy zadaniu.
+Dane: aktywne zadanie.
+Oczekiwany rezultat: status zmienia się na wykonany.
+Rzeczywisty rezultat: status zmieniony.
+Status: zaliczony.
+
+T5 - Walidacja pustego formularza
+Kroki: zostawić pole tytułu puste i kliknąć zapis.
+Dane: puste pole.
+Oczekiwany rezultat: pojawia się komunikat o błędzie.
+Rzeczywisty rezultat: komunikat pojawił się poprawnie.
+Status: zaliczony.
+
+
+5. Warunki testowe
+
+Przed testami trzeba było mieć uruchomioną aplikację, dostęp do przeglądarki
+i odblokowany LocalStorage. Do samych testów przydały się przykładowe zadania
+oraz poprawne i puste wartości w formularzu.
+
+
+6. Wyniki
+
+Wykonane testy: 5
+Zaliczone: 5
+Wykryte błędy: 0
+
+
+7. Wykryte problemy
+
+Podczas testów nie trafiliśmy na błędy wymagające poprawy.
+
+
+8. Podsumowanie
+
+Aplikacja działa zgodnie z założeniami projektu. Na przyszłość warto byłoby
+rozszerzyć testy o urządzenia mobilne oraz sprawdzić zachowanie przy większej
+liczbie zadań.
