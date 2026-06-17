@@ -6,7 +6,7 @@ Projekt zespołowy realizowany na zajęcia. Pomysł na aplikację wziął się z
 
 Termin oddania: 10–12 czerwca 2026. Na całość mieliśmy 4 tygodnie.
 
-## Co aplikacja potrafi
+## Co potrafi aplikacja 
 
 Taskly to lista zadań z dwoma rodzajami wpisów:
 
