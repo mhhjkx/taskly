@@ -75,7 +75,7 @@ Każde zadanie zapisujemy jako obiekt. Zapis dzieje się automatycznie przy każ
 
 ## Uruchomienie
 
-Nie trzeba nic instalować ani budować — Vue, Tailwind i GSAP ładują się z CDN. Wystarczy otworzyć `index.html` w przeglądarce. Jeśli chcesz uniknąć ewentualnych problemów z Local Storage przy otwieraniu pliku bezpośrednio, możesz odpalić dowolny lokalny serwer, np.:
+Nie trzeba nic instalować ani budować — Vue, Tailwind i GSAP ładują się z CDN. Wystarczy otworzyć `index.html` lub w przeglądarce wpisać `https://taskly.hoe-sting.com/`. Jeśli chcesz uniknąć ewentualnych problemów z Local Storage przy otwieraniu pliku bezpośrednio, możesz odpalić dowolny lokalny serwer, np.:
 
 ```
 python -m http.server
